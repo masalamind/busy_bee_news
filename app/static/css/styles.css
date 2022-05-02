@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&family=Radio+Canada&display=swap');
+
+body{
+    background-color: pink;
+}
+
+ul li{
+    list-style: none;
+    display: inline-flex;
+}
+
+button{
+    border: none;
+    padding: 5px;
+}
+
+.top-nav{
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Prompt', sans-serif;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Radio Canada', sans-serif;
+}
+.top-nav a{ color: black; }
