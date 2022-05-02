@@ -25,4 +25,14 @@ button{
     justify-content: space-around;
     font-family: 'Radio Canada', sans-serif;
 }
+
+.main-nav input, .main-nav select{
+    border: none;
+    padding: 5px;
+}
 .top-nav a{ color: black; }
+
+button{
+    border-radius: 2px;
+    padding: 5px 10px;
+}
