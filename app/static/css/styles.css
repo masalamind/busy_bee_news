@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt&family=Radio+Canada&display=swap');
 
 body{
-    background-color: pink;
+
 }
 
 ul li{
@@ -13,17 +13,34 @@ button{
     border: none;
     padding: 5px;
 }
-
+.top-nav ul {margin:0;  }
 .top-nav{
+    height: 2em;
+    font-size: .8em;
     display: flex;
-    justify-content: flex-end;
+    justify-content: between;
     font-family: 'Prompt', sans-serif;
 }
 
+
 .main-nav{
+    height: 4em;
+    padding-top: 7px;
+    background-color: #01175E;
+    color: #fff;
     display: flex;
     justify-content: space-around;
     font-family: 'Radio Canada', sans-serif;
+}
+.main-nav ul li{
+    margin-right: 5px;
+}
+a:hover{ color: #EDB610; }
+
+button{
+    font-weight: bold;
+    background-color: #fff;
+    color: #01175E;
 }
 
 .main-nav input, .main-nav select{
@@ -32,7 +49,12 @@ button{
 }
 .top-nav a{ color: black; }
 
-button{
+button, select{
     border-radius: 2px;
     padding: 5px 10px;
+}
+
+button:hover, select:hover{
+    cursor: pointer;
+    color: #EDB610;
 }
