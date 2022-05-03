@@ -28,16 +28,18 @@
             <div class="top-headlines col col-md-8">
 
                 <h4>Top Headlines</h4>
-                <h6>Politics</h6>
-                <h2>The Scars of War Will Remain There for Life, Published Study Finds</h2>
-                <p>I actually first read this as alkalizing meaning eeffecting pH level, and I was like, OK I guess i understand how that could
-                positively effect...</p>
+                {% for news, desc, img in context %}
 
-                <h3>Companies Will Invest At Least $125 Billiion in Metaverse Development</h3>
-                <h5>Finance</h5> <h6>March 8, 2022</h6>
+                    <h6>Politics</h6>
+                    <h2>{{news}}</h2>
+                    <p>{{desc}}</p>
 
-                <h3>Companies Will Invest At Least $125 Billiion in Metaverse Development</h3>
-                <h5>Finance</h5> <h6>March 8, 2022</h6>
+                    <h3>{{news}}</h3>
+                    <h5>Finance</h5> <h6>March 8, 2022</h6>
+
+                    <h3>{{news}}</h3>
+                    <h5>Finance</h5> <h6>March 8, 2022</h6>
+                {% endfor %}
             </div>
             <div class="col-md-2">
                 {% for new, des, im in context %}

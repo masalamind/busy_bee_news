@@ -14,7 +14,7 @@ def home():
     news = []
     img = []
 
-    for i in range(len(articles)):
+    for i in range(6):
         myarticles = articles[i]
 
         news.append(myarticles['title'])
