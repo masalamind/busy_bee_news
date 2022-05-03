@@ -15,9 +15,9 @@ def home():
     img = []
 
     for i in range(len(articles)):
-        myarticles = [articles[i]]
+        myarticles = articles[i]
 
-        news.append(myarticles["title"])
+        news.append(myarticles['title'])
         desc.append(myarticles["description"])
         img.append(myarticles["urlToImage"])
 
@@ -28,7 +28,23 @@ def home():
 if __name__ == "__main__":
     app.run(debug=True)
 
-# @app.route("/bbc")
-# def home():
-#     src = "BBC"
-#     return render_template('news_source.html', source = 'src')
+# @app.route("/al-jazeera")
+# @app.route("/aljazeera")
+# def aljazeera():
+#     newsapi = NewsApiClient(api_key='4c9546d6e1fb4b03a2ff8273c06023ac')
+#     topheadlines = newsapi.get_top_headlines(sources='al-jazeera-english')
+#
+#     articles = topheadlines['articles']
+#
+#     desc = []
+#     news = []
+#     img = []
+#
+#     for i in range(len(articles)):
+#         myarticles = [articles[i]]
+#         news.append(myarticles["title"])
+#         desc.append(myarticles["description"])
+#         img.append(myarticles["urlToImage"])
+#
+#     mylist = zip(news, desc, img)
+#     return render_template('aljazeera.html', context= mylist)
